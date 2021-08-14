@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--  Start HTML -->
+<html lang="en">
+  <!--  Start Head -->
+  <head>
+    <!--  Start Extra Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FontAwesome Link Css Only -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+
+    <!--  Css Link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons Link -->
+    <link rel="shortcut icon" href="./favicon/android-chrome-512x512.png" type="image/x-icon">
+ 
+    <!--  Start Title -->
+    <title>Todo List</title>
+  </head>
+  <!--   Start Body -->
+  <body>
+    <!-- Start Todo__Div -->
+   <div class="extra_parent">
+    
+    <div class="parent">
+      <h1>todo list</h1>
+      <div class="todo">
+        <input type="text" name="text" id="todo__id" maxlength="40">
+        <br>
+        <button onclick="Add__Todo__list()" id="add__btn">add  todo</button>
+        <button onclick="Delete__All()" id="delt__btn">delete all</button>   
+    </div>
+    <div class="list__div">
+        <ul id="list"></ul>
+    </div>    
+
+    </div>
+   </div>
+
+  </body>
+  <!--  JavaScript Link -->
+  <script src="app.js"></script>
+</html>

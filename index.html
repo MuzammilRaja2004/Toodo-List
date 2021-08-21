@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FontAwesome Link Css Only -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css" />
 
     <!--  Css Link  -->
     <link rel="stylesheet" href="style.css" />
@@ -22,30 +22,46 @@
     />
 
     <!-- Favicons Link -->
-    <link rel="shortcut icon" href="./favicon/android-chrome-512x512.png" type="image/x-icon">
- 
+    <link
+      rel="shortcut icon"
+      href="./favicon/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+
     <!--  Start Title -->
     <title>Todo List</title>
   </head>
   <!--   Start Body -->
   <body>
-    <!-- Start Todo__Div -->
-   <div class="extra_parent">
+    <!-- Start Header -->
+    <header>
+      <div class="main__head">
+        <img
+          src="favicon/android-chrome-192x192.png"
+          alt="Please Check Your Internet Connection"
+          class="extra_class"
+        />
+      </div>
+      <div class="header__head">
+        <h1>Todo App</h1>
+      </div>
+    </header>
     
-    <div class="parent">
-      <h1>todo list</h1>
-      <div class="todo">
-        <input type="text" name="text" id="todo__id" maxlength="40">
-        <br>
-        <button onclick="Add__Todo__list()" id="add__btn">add  todo</button>
-        <button onclick="Delete__All()" id="delt__btn">delete all</button>   
+    <!-- Start Todo__Div -->
+    <div class="extra_parent">
+      <div class="parent">
+        <h1>todo list</h1>
+        <div class="todo">
+          <input type="text" name="text" id="todo__id" maxlength="40" />
+          <br />
+          <button onclick="Add__Todo__list()" id="add__btn">add todo</button>
+          <button onclick="Delete__All()" id="delt__btn">delete all</button>
+        </div>
+        <div class="list__div">
+          <ul id="list"></ul>
+        </div>
+      </div>
     </div>
-    <div class="list__div">
-        <ul id="list"></ul>
-    </div>    
-
-    </div>
-   </div>
 
   </body>
   <!--  JavaScript Link -->
